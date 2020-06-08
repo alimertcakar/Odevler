@@ -1,7 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-*.docx diff=astextplain
+*.docx filter=lfs diff=lfs merge=lfs -text
 *.DOCX diff=astextplain
 *.dot diff=astextplain
 *.DOT diff=astextplain
